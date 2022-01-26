@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>welcome to relative url templates</h1>
+    <!-- sitas netinka nes konkretus labai, per tiksliai nurodo -->
+    <!-- <a href="basic_app/other.html">the other page</a> -->
+    <a href="{% url 'basic_app:other' %}">other page</a>
+    <a href="{% url 'admin:index' %}">admin page</a>
+    <a href="{% url 'index' %}">Luink to index</a>
+    <!-- sitas basic_app: yra is urls.py, ne tiesiog folder name, o other, yra irgi name is urls.py prie url patterns    -->
+</body>
+</html>
